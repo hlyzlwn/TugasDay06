@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CardViewNegara"
+    android:layout_width="360dp"
+    android:layout_height="157dp"
+    android:layout_marginStart="25dp"
+    android:layout_marginTop="30dp"
+    android:layout_marginEnd="20dp"
+    android:clickable="true"
+    app:cardCornerRadius="15dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <RelativeLayout
+        android:id="@+id/RelativeNegara"
+        android:layout_width="374dp"
+        android:layout_height="188dp"
+        android:background="#333"
+        android:backgroundTint="@color/white">
+
+        <ImageView
+            android:id="@+id/Gambar"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/white"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/TeksNama"
+            android:layout_width="185dp"
+            android:layout_height="42dp"
+            android:layout_alignTop="@id/Gambar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="-17dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@id/Gambar"
+            android:gravity="center"
+            android:text="@string/Teks1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:id="@+id/scrolldeskripsi"
+            android:layout_width="204dp"
+            android:layout_height="86dp"
+            android:layout_below="@id/TeksNama"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="1dp"
+            android:layout_toEndOf="@id/Gambar">
+
+            <TextView
+                android:id="@+id/textDeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/teksdeskripsi"
+                android:textSize="14sp" />
+        </ScrollView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

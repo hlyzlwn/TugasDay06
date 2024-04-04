@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TugasDay06</string>
+    <string name="share">Share</string>
+    <string name="namaNegara" />
+    <string name="Teks1" />
+    <string name="teksdeskripsi" />
+    <string name="negara_eropa">Negara Eropa</string>
+</resources>
